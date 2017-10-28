@@ -2,7 +2,55 @@
  font-family: Montserrat/Lato
  color: #2c3e50 / #18bc9c / #212529
  */
- body{
+
+ /*estilos a nav*/
+
+ nav{
+   position: fixed;
+   width: 100%;
+   z-index: 100;
+   top: 0;
+   left: 0;
+}
+nav .container{
+  background-color: yellow;
+  height: 80px;
+  position: relative;
+}
+nav .container a{
+  outline: 1px solid red;
+  text-decoration: none;
+}
+nav .container .navbar-brand{
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+nav .container ul{
+  display: inline-block;
+  list-style: none;
+  outline: 1px solid blue;
+  position: absolute;
+  right: 0;
+}
+
+/*nav .container ul li{
+  position: relative;
+  left: 0;
+}*/
+
+/*estilos al header,section,footer*/
+
+header, section, footer{
+  text-align: center;
+  width: 100%;
+  background: skyblue;
+  margin-top: 0;
+}
+
+
+ /*body{
    width: 100%;
  }
 header{
@@ -47,4 +95,4 @@ main{
 main .main-a, main .main-c{
   background-color: #18bc9c;
   height: 880px;
-}
+}*/
