@@ -179,6 +179,7 @@ header .container .text{
   display: block;
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 20px;
   vertical-align: inherit;
 }
 /*.name{
@@ -188,13 +189,18 @@ header .container .text{
   vertical-align: inherit;
 }*/
 
-hr{
-  background-color: #fff;
-  border: none;
-  width: 200px;
-  height: 6px;
-  margin-top: 20px;
-  outline: none;
+.line-star-white{
+ width: 40%;
+ border: 2px solid #fff;
+ position: relative;
+ left: 120px;
+}
+.fa-star-white{
+  background-color: #18bb9b;
+  color: #fff;
+  font-size: 20px;
+  transform:translateY(-70%);
+  padding: 13px;
 }
 
 /*SECTION - PORTFOLIO*/
