@@ -4,24 +4,83 @@
  */
 
  /*estilos a nav*/
+ *{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+ }
+
+ body{
+   margin: 0 auto;
+   font-family: 'Montserrat', sans-serif;
+ }
 
  nav{
+   background-color: #2c3e50;
    position: fixed;
    width: 100%;
    z-index: 100;
-   top: 0;
-   left: 0;
 }
 nav .container{
-  background-color: yellow;
-  height: 80px;
+  display: block;
+  line-height: 1.5;
+  padding-right: 0;
+  padding-left: 0;
   position: relative;
 }
-nav .container a{
-  outline: 1px solid red;
-  text-decoration: none;
+nav .container button{
+  position: absolute;
+  right: 0;
 }
 nav .container .navbar-brand{
+  outline: 2px solid yellow;
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 800;
+  position: absolute;
+}
+nav .container ul{
+  outline: 2px solid yellow;
+  margin-top: 50px;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+nav .container .navbar-collapse .navbar-nav{
+  display: flex;
+}
+
+.menu-bar{
+  display: none;
+}
+
+nav .container ul{
+  overflow: hidden;
+  /*outline: 1px solid #fff;*/
+  font-weight: 600;
+}
+nav .container ul li{
+  float: left;
+  list-style: none;
+}
+nav .container ul li a{
+  /*outline: 1px solid #fff;*/
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+nav .container ul li a:hover{
+  color: #18bc9c;
+}
+
+
+/*nav .container .navbar-brand{
   display: inline-block;
   position: absolute;
   top: 30px;
@@ -30,9 +89,61 @@ nav .container .navbar-brand{
 nav .container ul{
   display: inline-block;
   list-style: none;
-  outline: 1px solid blue;
+  outline: 1px solid #fff;
   position: absolute;
   right: 0;
+}*/
+
+@media screen and (max-width:992px){
+    nav .container{
+      background-color:#2c3e50;
+      width: 100%;
+      height: 25%;
+      margin: 0;
+      position: fixed;
+    }
+    nav .container ul li{
+      display: block;
+      float: none;
+    }
+    nav .container button .bt-menu{
+      /*outline: 1px solid skyblue;*/
+      width: 65%;
+    }
+    nav .container button #fa-bars{
+      /*outline: 1px solid skyblue;*/
+      font-size: 20px;
+      position: relative;
+      left: 36px;
+      bottom: 31px;
+      width: 30%;
+    }
+    .menu-bar{
+      border: 1px solid #fff;
+      border-radius: 5px;
+      color: #fff;
+      display: inline-block;
+      width: 15%;
+      height: 45px;
+      background: #2c3e50;
+      right: 0;
+    }
+    .menu-bar:hover{
+      background-color: #18bc9c;
+    }
+    .menu-bar a{
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .menu-bar .bt-menu{
+      box-sizing: border-box;
+      display: block;
+      padding: 10px;
+      color:#fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
 }
 
 /*nav .container ul li{
@@ -42,13 +153,243 @@ nav .container ul{
 
 /*estilos al header,section,footer*/
 
-header, section, footer{
-  text-align: center;
+header{
+  background-color: #18bc9c;
+  display: block;
+  height: 880px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   width: 100%;
-  background: skyblue;
-  margin-top: 0;
+}
+header .container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 120px;
+}
+header .container .text{
+  color: #fff;
+  display: inline-block;
+  margin-top: 30px;
+  line-height: 50px;
+  /*font-size: 20px;*/
+}
+#intro-text .name{
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  vertical-align: inherit;
+}
+/*.name{
+  display: block;
+  font-size: 2em;
+  font-weight: 700;
+  vertical-align: inherit;
+}*/
+
+hr{
+  background-color: #fff;
+  border: none;
+  width: 200px;
+  height: 6px;
+  margin-top: 20px;
+  outline: none;
 }
 
+/*SECTION - PORTFOLIO*/
+.portfolio .container .portfolio-items{
+  display: flex;
+  flex: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.portfolio .container .portfolio-items a img{
+  width: 210px;
+  height: 152px;
+}
+/*SECTION - ABOUT*/
+#about{
+  background-color: #18bc9c;
+  display: block;
+  height: 600px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+#about .container{
+  color: #fff;
+  line-height: 1.5;
+}
+#about .container .download{
+  margin-top: 50px;
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 20%;
+}
+/*SECTION-CONTACT*/
+#contact{
+  display: block;
+  height: 600px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+#contact .container{
+  line-height: 1.5;
+  position: relative;
+}
+#contact .container form div input, #contact .container form div textarea{
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid transparent;
+}
+
+/*FOOTER*/
+footer{
+  background-color: #2c3e50;
+  color: #fff;
+  display: block;
+  line-height: 1.5;
+  text-align: center!important;
+}
+footer .footer-above, footer .footer-below{
+  display:block;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-above .location, .footer-above .web, .footer-above .about-freelancer{
+  display: inline-block;
+  margin-top: 0;
+  outline: 1px solid #18bc9c;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer-above .location h2, .footer-above .web h2, .footer-above .about-freelancer h2{
+  font-weight: 700;
+}
+
+.footer-above .location{
+  /*position: relative;*/
+  /*bottom: 25px;*/
+  width: 30%;
+}
+
+.footer-above .web{
+  /*position: relative;*/
+  /*bottom: 35px;*/
+  width: 30%;
+}
+.footer-above .web .sites-web a{
+  height: 40px;
+  width: 40px;
+}
+
+.footer-above .web .sites-web a i{
+  color: #fff;
+  font-size: 15px;
+  margin: 5px;
+  padding: 5px;
+  /*outline: 1px solid #fff;*/
+  height: 45px;
+  width: 45px;
+  border: 1px solid #fff;
+  border-radius: 45px;
+  vertical-align: middle;
+}
+.footer-above .web .sites-web a i:hover{
+  background-color: #fff;
+  color: #18bc9c;
+}
+
+.footer-above .about-freelancer{
+  /*position: relative;*/
+  width: 30%;
+}
+
+.footer-above .about-freelancer p span a{
+  text-decoration: none;
+  color: #18bc9c;
+}
+
+
+
+
+/******************************************************************/
+/*
+footer{
+  background-color: #2c3e50;
+  color: #fff;
+}
+footer .footer-container{
+  padding-top: 50px;
+}
+footer .footer-container .container{
+  display: inline-block;
+  width: 100%;
+  line-height: 1.71;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+footer .footer-container .container .location{
+  outline: 1px solid #fff;
+  width: 33%;
+}
+footer .footer-container .container .around-web{
+  outline: 1px solid #fff;
+  margin-left: 20px;
+  width: 33%;
+  position: relative;
+  left: 320px;
+  bottom: 95px;
+
+}
+footer .footer-container .container .about-freelancer{
+  outline: 1px solid #fff;
+  width: 33%;
+}
+
+footer .footer-container .container ul{
+  list-style: none;
+}
+#facebook a i, #google-plus a i, #twitter a i, #linkedin a i, #dribble a i{
+  color: #fff;
+  display: inline-block;
+  outline: 1px solid #fff;
+  padding: 5px;
+  text-decoration: none;
+}*/
+
+/******************************************************************************/
+
+/*header, section, footer{
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+}
+ header,.about{
+   background-color: #18bc9c;
+   color: #fff;
+   height: 600px;
+ }
+nav .container, footer{
+  background-color:#2c3e50;
+  color: #fff;
+}
+
+header .container{
+  vertical-align: middle;
+*/
+
+/*************************************************************************/
+
+/*section, footer{
+  height:25%;
+}
+*/
 
  /*body{
    width: 100%;
