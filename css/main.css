@@ -3,7 +3,7 @@
  color: #2c3e50 / #18bc9c / #212529
  */
 
- /*estilos a nav*/
+
  *{
    box-sizing: border-box;
    font-family: 'Lato', sans-serif;
@@ -17,6 +17,7 @@
    max-width: 100%;
  }
 
+/*estilos a nav*/
  nav{
    position: fixed;
    width: 100%;
@@ -35,12 +36,14 @@ nav .container{
 }
 .title1{
   color: #fff;
+  cursor: pointer;
   display: flex;
   flex-flow: wrap;
   font-size: 40px;
   font-weight: 800;
   padding: 10px;
   text-decoration: none;
+  width: 40%;
 }
 
 nav .container ul{
@@ -51,7 +54,7 @@ nav .container ul{
   right: 0;
   bottom: 35px;
   display: flex;
-  width: 100%;
+  width: 50%;
   font-size: 20px;
   justify-content: flex-end;
 }
@@ -87,13 +90,6 @@ header .container .text{
   display: inline-block;
   margin-top: 30px;
   line-height: 50px;
-}
-#intro-text .title-1{
-  display: block;
-  font-size: 60px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  vertical-align: inherit;
 }
 
 .line-star-white{
