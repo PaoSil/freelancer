@@ -6,6 +6,7 @@
  /*estilos a nav*/
  *{
    box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
    margin: 0;
    padding: 0;
    text-align: center;
@@ -13,63 +14,49 @@
 
  body{
    margin: 0 auto;
-   font-family: 'Montserrat', sans-serif;
+   max-width: 100%;
  }
 
  nav{
-   background-color: #2c3e50;
    position: fixed;
    width: 100%;
    z-index: 100;
 }
 nav .container{
+  background-color: #2c3e50;
+  width: 100%;
+  height: 100px;
   display: block;
   line-height: 1.5;
+  margin-top: 0;
   padding-right: 0;
   padding-left: 0;
   position: relative;
 }
-nav .container button{
-  position: absolute;
-  right: 0;
-}
-nav .container .navbar-brand{
-  outline: 2px solid yellow;
+.title1{
   color: #fff;
   display: flex;
-  text-decoration: none;
-  font-size: 30px;
+  flex-flow: wrap;
+  font-size: 40px;
   font-weight: 800;
-  position: absolute;
+  padding: 10px;
+  text-decoration: none;
 }
+
 nav .container ul{
-  outline: 2px solid yellow;
+ /*outline: 2px solid yellow;*/
+  list-style: none;
   margin-top: 50px;
   position: absolute;
   right: 0;
-  display: inline-block;
-  width: 100%;
-}
-
-nav .container .navbar-collapse .navbar-nav{
+  bottom: 35px;
   display: flex;
+  width: 100%;
+  font-size: 20px;
+  justify-content: flex-end;
 }
 
-.menu-bar{
-  display: none;
-}
-
-nav .container ul{
-  overflow: hidden;
-  /*outline: 1px solid #fff;*/
-  font-weight: 600;
-}
-nav .container ul li{
-  float: left;
-  list-style: none;
-}
 nav .container ul li a{
-  /*outline: 1px solid #fff;*/
   color: #fff;
   display: block;
   padding: 10px;
@@ -79,79 +66,7 @@ nav .container ul li a:hover{
   color: #18bc9c;
 }
 
-
-/*nav .container .navbar-brand{
-  display: inline-block;
-  position: absolute;
-  top: 30px;
-  left: 0;
-}
-nav .container ul{
-  display: inline-block;
-  list-style: none;
-  outline: 1px solid #fff;
-  position: absolute;
-  right: 0;
-}*/
-
-@media screen and (max-width:992px){
-    nav .container{
-      background-color:#2c3e50;
-      width: 100%;
-      height: 25%;
-      margin: 0;
-      position: fixed;
-    }
-    nav .container ul li{
-      display: block;
-      float: none;
-    }
-    nav .container button .bt-menu{
-      /*outline: 1px solid skyblue;*/
-      width: 65%;
-    }
-    nav .container button #fa-bars{
-      /*outline: 1px solid skyblue;*/
-      font-size: 20px;
-      position: relative;
-      left: 36px;
-      bottom: 31px;
-      width: 30%;
-    }
-    .menu-bar{
-      border: 1px solid #fff;
-      border-radius: 5px;
-      color: #fff;
-      display: inline-block;
-      width: 15%;
-      height: 45px;
-      background: #2c3e50;
-      right: 0;
-    }
-    .menu-bar:hover{
-      background-color: #18bc9c;
-    }
-    .menu-bar a{
-      text-decoration: none;
-      color: #fff;
-    }
-
-    .menu-bar .bt-menu{
-      box-sizing: border-box;
-      display: block;
-      padding: 10px;
-      color:#fff;
-      text-decoration: none;
-      font-size: 20px;
-    }
-}
-
-/*nav .container ul li{
-  position: relative;
-  left: 0;
-}*/
-
-/*estilos al header,section,footer*/
+/*estilos al header*/
 
 header{
   background-color: #18bc9c;
@@ -164,36 +79,29 @@ header{
 header .container{
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 120px;
+  width: 100%;
 }
 header .container .text{
   color: #fff;
   display: inline-block;
   margin-top: 30px;
   line-height: 50px;
-  /*font-size: 20px;*/
 }
-#intro-text .name{
+#intro-text .title-1{
   display: block;
-  font-size: 30px;
+  font-size: 60px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   vertical-align: inherit;
 }
-/*.name{
-  display: block;
-  font-size: 2em;
-  font-weight: 700;
-  vertical-align: inherit;
-}*/
 
 .line-star-white{
- width: 40%;
  border: 2px solid #fff;
+ margin: auto;
  position: relative;
- left: 120px;
+ top: 20px;
+ width: 30%;
 }
 .fa-star-white{
   background-color: #18bb9b;
@@ -201,25 +109,61 @@ header .container .text{
   font-size: 20px;
   transform:translateY(-70%);
   padding: 13px;
+  margin-top: 12px;
+  position: relative;
+  top: 25px;
+}
+
+.skills span{
+  display: inline-block;
+  font-size: 25px;
 }
 
 /*SECTION - PORTFOLIO*/
-.portfolio .container .portfolio-items{
-  display: flex;
-  flex: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+.portfolio .container{
+  width: 100%;
+  margin-top: 20px;
+  line-height: 2;
 }
-.portfolio .container .portfolio-items a img{
-  width: 210px;
-  height: 152px;
+ .title-2{
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 800;
 }
+.line-star-black{
+ width: 200px;
+ border: 2px solid #000;
+ margin: auto;
+ margin-top: 30px;
+}
+.fa-star-black{
+  background-color: #fff;
+  color: #000;
+  transform:translateY(-78%);
+  margin-top: 15px;
+  padding: 13px;
+}
+.portfolio-items{
+  margin: auto;
+  width: 90%;
+}
+
+#image{
+  display: inline-block;
+  margin: 15px;
+  width: 350px;
+  height: 280px;
+}
+#image img{
+  cursor: pointer;
+  width: 100%;
+}
+
 /*SECTION - ABOUT*/
 #about{
   background-color: #18bc9c;
-  display: block;
   height: 600px;
-  padding-top: 100px;
+  padding-top: 25px;
   padding-bottom: 50px;
   width: 100%;
 }
@@ -227,29 +171,95 @@ header .container .text{
   color: #fff;
   line-height: 1.5;
 }
-#about .container .download{
-  margin-top: 50px;
+.title-3{
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 800;
+}
+#about .line-star-white{
+ border: 2px solid #fff;
+ margin-top: 0;
+ width: 200px;
+}
+.fa-star-white{
+  background-color: #18bb9b;
+  color: #fff;
+  font-size: 20px;
+  transform:translateY(-105%);
+  padding: 13px;
+  margin-top: 30px;
+}
+#about .description{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 60px;
+}
+.description p{
+  /*outline: 1px solid red;*/
+  font-size: 18px;
+  margin: 15px;
+  padding: 15px;
+  width: 25%;
+  text-align: justify;
+}
+
+.download{
+  text-decoration: none;
   border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
   padding: 10px;
-  width: 20%;
+  position: relative;
+  bottom: 60px;
+  width: 25%;
+
+}
+.download:hover{
+  background-color: #fff;
+  color: #18bc9c;
+
 }
 /*SECTION-CONTACT*/
 #contact{
-  display: block;
-  height: 600px;
+  height: 700px;
   padding-top: 100px;
   padding-bottom: 50px;
   width: 100%;
 }
 #contact .container{
-  line-height: 1.5;
   position: relative;
+  bottom: 80px;
 }
-#contact .container form div input, #contact .container form div textarea{
+.title-4{
+  font-size: 50px;
+}
+#contact input, #contact textarea{
   width: 80%;
   border: none;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #ccd3d1;
+  line-height: 3;
+  font-size: 25px;
+  text-align: left;
 }
+#contact textarea{
+  height: 150px;
+}
+#contact form{
+  width: auto;
+}
+#submit input{
+  border-radius: 5px;
+  background-color:#18bb9b;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  width: 80px;
+}
+
 
 /*FOOTER*/
 footer{
@@ -257,9 +267,8 @@ footer{
   color: #fff;
   display: block;
   line-height: 1.5;
-  text-align: center!important;
 }
-footer .footer-above, footer .footer-below{
+.footer-above,.footer-below{
   display:block;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -268,7 +277,7 @@ footer .footer-above, footer .footer-below{
 .footer-above .location, .footer-above .web, .footer-above .about-freelancer{
   display: inline-block;
   margin-top: 0;
-  outline: 1px solid #18bc9c;
+  /*outline: 1px solid #18bc9c;*/
   vertical-align: middle;
   margin-left: 10px;
   margin-right: 10px;
@@ -320,126 +329,3 @@ footer .footer-above, footer .footer-below{
   text-decoration: none;
   color: #18bc9c;
 }
-
-
-
-
-/******************************************************************/
-/*
-footer{
-  background-color: #2c3e50;
-  color: #fff;
-}
-footer .footer-container{
-  padding-top: 50px;
-}
-footer .footer-container .container{
-  display: inline-block;
-  width: 100%;
-  line-height: 1.71;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-footer .footer-container .container .location{
-  outline: 1px solid #fff;
-  width: 33%;
-}
-footer .footer-container .container .around-web{
-  outline: 1px solid #fff;
-  margin-left: 20px;
-  width: 33%;
-  position: relative;
-  left: 320px;
-  bottom: 95px;
-
-}
-footer .footer-container .container .about-freelancer{
-  outline: 1px solid #fff;
-  width: 33%;
-}
-
-footer .footer-container .container ul{
-  list-style: none;
-}
-#facebook a i, #google-plus a i, #twitter a i, #linkedin a i, #dribble a i{
-  color: #fff;
-  display: inline-block;
-  outline: 1px solid #fff;
-  padding: 5px;
-  text-decoration: none;
-}*/
-
-/******************************************************************************/
-
-/*header, section, footer{
-  text-align: center;
-  width: 100%;
-  margin-top: 0;
-}
- header,.about{
-   background-color: #18bc9c;
-   color: #fff;
-   height: 600px;
- }
-nav .container, footer{
-  background-color:#2c3e50;
-  color: #fff;
-}
-
-header .container{
-  vertical-align: middle;
-*/
-
-/*************************************************************************/
-
-/*section, footer{
-  height:25%;
-}
-*/
-
- /*body{
-   width: 100%;
- }
-header{
-  position: fixed;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background-color: yellow;
-  vertical-align: middle;
-  z-index: 200;
-}
-nav{
-  position: relative;
-}
-
-header nav .container a{
-  position: relative;
-  left: 0;
-  top: 10px;
-  text-decoration: none;
-}
-
-
-nav .menu{
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  bottom: -20px;
-
-}
-nav .menu li{
-  display: inline-block;
-  text-decoration: none;
-}
-main{
-  text-align: center;
-  z-index: 100;
-  left: 0;
-}
-
-main .main-a, main .main-c{
-  background-color: #18bc9c;
-  height: 880px;
-}*/

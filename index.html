@@ -16,18 +16,11 @@
   <!--Menu principal-->
     <nav class="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#page-top">INICIAR BOOSTRAP</a>
-        <!--<button type="button" name="button">
-
-        </button>-->
-          <button class="menu-bar">
-            <a href="#" class="bt-menu">MENU</a>
-            <i class="fa fa-bars" id="fa-bars"></i>
-          </button>
+        <a class="title1" href="#page-top">START BOOSTRAP</a>
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="#">PORTAFOLIO</a></li>
-            <li class="nav-item"><a href="#">ACERCA DE</a></li>
-            <li class="nav-item"><a href="#">CONTACTO</a></li>
+            <li class="nav-item"><a href="#">PORTFOLIO</a></li>
+            <li class="nav-item"><a href="#">ABOUT</a></li>
+            <li class="nav-item"><a href="#">CONTACT</a></li>
           </ul>
         </div>
     </nav>
@@ -39,16 +32,13 @@
         </div>
         <div class="text">
           <div id="intro-text">
-            <h1 class="name">INICIAR BOOTSTRAP</h1>
+            <h1 class="title-1">START BOOTSTRAP</h1>
           </div>
           <!--before and after-->
           <div class="line-star-white"></div>
-          <i class="fa fa-star fa-star-white" aria-hidden="true"></i>
-          <!--<div class="icon-star-white">
-            <i class="fa fa-star"></i>
-          </div>-->
+          <i class="fa fa-star fa-2x fa-star-white" aria-hidden="true"></i>
           <div class="skills">
-            <span class="skills-a">Desarrollador web - Artista grafico - User Experience</span>
+            <span class="skills-a">Web Developer - Graphic Artist - User Experience Designer</span>
           </div>
         </div>
       </div>
@@ -56,62 +46,71 @@
     <!--PORTAFOLIO-->
     <section id="portfolio">
       <div class="container">
-        <h2>PORTAFOLIO</h2>
-        <div class="icon-star-navy">
-          <i class="fa fa-star"></i>
-        </div>
+        <h2 class="title-2">PORTFOLIO</h2>
+        <div class="line-star-black"></div>
+        <i class="fa fa-star fa-2x fa-star-black" aria-hidden="true"></i>
         <div class="portfolio-items">
-          <a href="#"><img src="assets/images/portfolio/cabin.png" alt="cabin"></a>
-          <a href="#"><img src="assets/images/portfolio/cake.png" alt="cake"></a>
-          <a href="#"><img src="assets/images/portfolio/circus.png" alt="circus"></a>
-          <a href="#"><img src="assets/images/portfolio/game.png" alt="game"></a>
-          <a href="#"><img src="assets/images/portfolio/safe.png" alt="safe"></a>
-          <a href="#"><img src="assets/images/portfolio/submarine.png" alt="submarine"></a>
+          <figure id="image">
+            <!--<a href="#" class="portfolio-img">--><img src="assets/images/portfolio/cabin.png" alt="cabin"><!--</a>-->
+          </figure>
+          <figure id="image">
+            <a href="#" class="portfolio-img"><img src="assets/images/portfolio/cake.png" alt="cake"></a>
+          </figure>
+          <figure id="image">
+            <a href="#" class="portfolio-img"><img src="assets/images/portfolio/circus.png" alt="circus"></a>
+          </figure>
+          <figure id="image">
+            <a href="#" class="portfolio-img"><img src="assets/images/portfolio/game.png" alt="game"></a>
+          </figure>
+          <figure id="image">
+            <a href="#" class="portfolio-img"><img src="assets/images/portfolio/safe.png" alt="safe"></a>
+          </figure>
+          <figure id="image">
+            <a href="#" class="portfolio-img"><img src="assets/images/portfolio/submarine.png" alt="submarine"></a>
+          </figure>
         </div>
       </div>
     </section>
     <!--ACERCA DE-->
     <section id="about">
         <div class="container">
-          <h2>ACERCA DE</h2>
-          <div class="icon-star-white">
-            <i class="fa fa-star"></i>
-          </div>
+          <h2 class="title-3">ABOUT</h2>
+          <div class="line-star-white"></div>
+          <i class="fa fa-star fa-2x fa-star-white" aria-hidden="true"></i>
           <div class="description">
-            <p>Freelancer es un tema de arranque gratuito creado por Start Bootstrap. La descarga incluye los archivos fuente completos, incluidos HTML, CSS y JavaScript, así como hojas de estilo LESS opcionales para facilitar la personalización.</p>
-            <p>Si es un estudiante que busca mostrar su trabajo, un profesional que busca atraer clientes o un artista gráfico que desea compartir sus proyectos, ¡esta plantilla es el punto de partida perfecto!</p>
+            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
           </div>
-          <div class="download">
+          <a href="#" class="download">
             <i class="fa fa-download"></i>
             <span>Descargar Theme</span>
-          </div>
+          </a>
         </div>
     </section>
     <!--CONTACTO-->
     <section id="contact">
       <div class="container">
-        <h2>CONTACTAME</h2>
-        <div class="icon-star-navy">
-          <i class="fa fa-star"></i>
-        </div>
+        <h2 class="title-4">CONTACT ME</h2>
+        <div class="line-star-black"></div>
+        <i class="fa fa-star fa-2x fa-star-black" aria-hidden="true"></i>
         <form class="form" method="post">
           <div class="container-name">
             <label for="name"></label>
-            <input id="name" type="text" placeholder="Name">
+            <input type="text" placeholder="Name" aria-invalid="false">
           </div>
           <div class="container-email">
             <label for="email-address"></label>
-            <input id="email-addredd" type="text" placeholder="Email Address">
+            <input type="text" placeholder="Email Address">
           </div>
           <div class="container-phone">
             <label for="phone-number"></label>
-            <input id="phone-number" type="text" placeholder="Phone Number">
+            <input type="text" placeholder="Phone Number">
           </div>
           <div class="container-message">
             <textarea name="name" rows="8" cols="80" placeholder="Message"></textarea>
           </div>
-          <div class="container-submit">
-            <input type="submit" name="" value="SEND">
+          <div id="submit">
+            <input type="submit" name="" value="Send">
           </div>
         </form>
       </div>
@@ -120,13 +119,13 @@
     <footer>
       <div class="footer-above">
         <div class="location">
-          <h2>UBICACION</h2>
+          <h2>LOCATION</h2>
           <span>3481 Melrose Place</span>
           <br>
           <span>Beverly Hills, CA 90210</span>
         </div>
         <div class="web">
-          <h2>ALREDEDOR DE LA WEB</h2>
+          <h2>AROUND THE WEB</h2>
           <div class="sites-web">
             <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
@@ -136,11 +135,11 @@
           </div>
         </div>
         <div class="about-freelancer">
-          <h2>SOBRE FREELANCER</h2>
+          <h2>ABOUT FREELANCER</h2>
           <p>
-            <span>Freelance es un tema de Bootstrap de codigo abierto de</span>
+            <span>Freelance is a free to use, open source Bootstrap theme </span>
             <br>
-            <span>uso gratuito creado por <a href="#">Start Bootstarp</a> .</span>
+            <span>created by <a href="#">Start Bootstarp</a> .</span>
           </p>
         </div>
       </div>
